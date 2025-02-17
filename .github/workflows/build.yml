@@ -6,7 +6,7 @@ on:
     - cron: '0 0 * * 5' # Run every friday at midnight
 
 env:
-  KERNEL_BRANCH: v6.13
+  KERNEL_BRANCH: v6.13.2
 
 jobs:
   build-image:
