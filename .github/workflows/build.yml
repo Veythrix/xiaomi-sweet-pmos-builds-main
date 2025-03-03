@@ -21,8 +21,8 @@ jobs:
 
       - name: Configure git
         run: |
-          git config --global user.email "sashaom339@gmail.com"
-          git config --global user.name "3osom3"
+          git config --global user.email "veythrix@gmail.com"
+          git config --global user.name "Veythrix"
 
       - name: Substitute placeholders in configs
         run: |
@@ -30,7 +30,7 @@ jobs:
 
       - name: Install pmbootstrap from git
         run: |
-          git clone https://gitlab.postmarketos.org/postmarketOS/pmbootstrap.git --depth 1
+          git clone https://gitlab.postmarketos.org/postmarketOS/pmbootstrap.git --depth 1 --branch 3.1.0
           mkdir -p ~/.local/bin
           ln -s "$PWD/pmbootstrap/pmbootstrap.py" ~/.local/bin/pmbootstrap
           pmbootstrap --version
