@@ -39,7 +39,7 @@ jobs:
         run: |
           echo -e '\n\n' | pmbootstrap init || true
           cd ~/.local/var/pmbootstrap/cache_git/pmaports
-          git remote add sm7150 https://github.com/sm7150-mainline/pmaports.git
+          git remote add sm7150 https://github.com/mainlining/pmaports.git
           DEFAULT_BRANCH=adrian/sweet
           git fetch sm7150 $DEFAULT_BRANCH
           git reset --hard sm7150/$DEFAULT_BRANCH
